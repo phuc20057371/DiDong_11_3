@@ -197,7 +197,9 @@ function Screen1({ navigation }) {
                 justifyContent: 'flex-end',
                 alignItems: 'flex-end',
               }} >
-                <TouchableOpacity onPress={handlePress}>
+                <TouchableOpacity onPress={()=>{
+                  navigation.navigate('Screen2', {task: task})
+                }}>
                   <AntDesign name="pluscircleo" size={35} color="white" />
                 </TouchableOpacity>
               </View>
